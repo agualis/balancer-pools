@@ -4,6 +4,9 @@ Proof of concept for balancer pools
 
 ## Development
 
+> **Node version**
+> Required node version: >=16.0.0
+
 Install pnpm:
 
 Follow [pnpm installation](https://pnpm.io/installation) instructions
@@ -21,6 +24,20 @@ pnpm dev
 ```
 
 The app should be running at http://localhost:4000
+
+## Code generation
+
+Download list of tokens metadata:
+
+```bash
+  pnpm download:tokenlist
+```
+
+Generate types for Graphql queries:
+
+```bash
+  pnpm generate-gql-types
+```
 
 ## Tests
 
