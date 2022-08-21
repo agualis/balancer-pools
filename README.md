@@ -1,41 +1,51 @@
 # Balancer pools
 
-## Install
+Proof of concept for balancer pools
 
-### Install pnpm
+## Development
+
+Install pnpm:
 
 Follow [pnpm installation](https://pnpm.io/installation) instructions
 
-### Install dependencies
+Install dependencies:
 
 ```bash
 pnpm i
 ```
 
-## Development
+Start the application:
 
 ```bash
 pnpm dev
 ```
 
+The app should be running at http://localhost:4000
+
 ## Tests
 
-### Unit tests
+Unit tests:
 
 ```bash
 pnpm test:unit
 ```
 
-### Unit tests with coverage
+Unit tests with coverage:
 
 ```bash
 pnpm test:unit:coverage
 ```
 
-### e2e tests
+e2e tests (headed):
 
 ```bash
 pnpm test:e2e
+```
+
+e2e tests for ci (headless):
+
+```bash
+pnpm test:e2e:ci
 ```
 
 ## Kudos
