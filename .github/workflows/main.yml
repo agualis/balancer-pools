@@ -46,8 +46,11 @@ jobs:
           node-version: 16
           cache: 'pnpm'
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
+      # - name: Install Playwright browsers
+      #   run: npx playwright install --with-deps
 
       - name: Run unit tests
         run: pnpm test:unit
+
+      # - name: Run e2e tests
+      #   run: pnpm test:e2e:ci
