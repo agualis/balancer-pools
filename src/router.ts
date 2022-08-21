@@ -1,13 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import IndexPage from '@/pages/IndexPage.vue'
+import Pools from '@/pages/pools/Pools.vue'
+import Pool from '@/pages/pool/Pool.vue'
 
-const routes = [
+export const routes = [
   {
     path: '/',
-    component: IndexPage,
+    component: Pools,
     meta: {
-      title: 'Vite + Vue + TypeScript + Tailwind Starter Template',
+      title: 'Pool list',
+    },
+  },
+  {
+    name: 'pool',
+    path: '/pool/:id',
+    component: Pool,
+    meta: {
+      title: 'Pool detail',
     },
   },
 ]

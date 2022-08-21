@@ -8,6 +8,8 @@
     "sourceMap": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "typeRoots": ["node_modules/@types", "types"],
+    "types": ["jest", "vitest/globals"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "useDefineForClassFields": true,
@@ -15,16 +17,17 @@
     "skipLibCheck": true,
     "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
     "paths": {
-      "@/*": ["./src/*"]
+      "@types/*": ["./types/*"],
+      "@/*": ["./src/*"],
+      "@tests/*": ["./tests/*"],
     }
   },
   "include": [
     "src/**/*.ts",
-    "tests/**/*.spec.ts",
-    "tests/**/*.test.ts",
+    "tests/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.vue",
-    "./components.d.ts"
+    "./components.d.ts",
   ],
   "exclude": ["node_modules", "dist", "public"],
   "references": [{ "path": "./tsconfig.node.json" }]
