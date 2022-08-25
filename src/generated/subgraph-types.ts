@@ -3548,11 +3548,6 @@ export type PoolByIdQuery = { __typename?: 'Query', pool?: { __typename?: 'Pool'
 
 export type PoolFragment = { __typename?: 'Pool', id: string, address: string, poolType?: string | null, swapFee: string, totalLiquidity: string, tokens?: Array<{ __typename?: 'PoolToken', address: string, balance: string, weight?: string | null, symbol: string }> | null };
 
-export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type Unnamed_1_Query = { __typename?: 'Query', pools: Array<{ __typename?: 'Pool', id: string, address: string, poolType?: string | null, swapFee: string, totalLiquidity: string, tokens?: Array<{ __typename?: 'PoolToken', address: string, balance: string, weight?: string | null, symbol: string }> | null }> };
-
 export type PaginatedPoolsQueryVariables = Exact<{
   pageSize: Scalars['Int'];
   skip: Scalars['Int'];
