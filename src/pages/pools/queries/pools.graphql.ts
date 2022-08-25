@@ -16,18 +16,6 @@ export const FRAGMENT_POOL_DETAILS = gql`
   }
 `;
 
-export const orderedPoolsQuery = gql`{
-  pools (
-    first: 10,
-    orderBy: totalLiquidity,
-    orderDirection: desc,
-    ) {
-      ...Pool
-    }
-  }
-  ${FRAGMENT_POOL_DETAILS}
-  `
-
 export const paginatedPoolsQuery = gql`
 query paginatedPools($pageSize: Int!, $skip: Int!) {
   pools(

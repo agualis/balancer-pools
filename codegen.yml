@@ -1,6 +1,6 @@
 overwrite: true
 schema: "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2"
-documents: ["tests/unit/fragments.ts", "tests/unit/*.graphql", "**/*.fragments.ts", "**/*.graphql.ts"]
+documents: ["**/*.fragments.ts", "**/*.graphql.ts"]
 generates:
   src/generated/subgraph-types.ts:
     plugins:
