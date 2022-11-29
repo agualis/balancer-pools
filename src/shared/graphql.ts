@@ -1,4 +1,4 @@
-import request from 'graphql-request';
+import {request} from 'graphql-request';
 
 export const balancerSubgraph =
   'https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2';
